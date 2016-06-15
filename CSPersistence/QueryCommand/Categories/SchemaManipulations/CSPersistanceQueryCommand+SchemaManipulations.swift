@@ -1,10 +1,25 @@
 //
 //  CSPersistanceQueryCommand+SchemaManipulations.swift
-//  CSArchitecture
 //
-//  Created by 李长松 on 16/4/10.
-//  Copyright © 2016年 Li. All rights reserved.
+//  Copyright (c) 2016 LiChangsong
 //
+//  Permission is hereby granted, free of charge, to any person obtaining a copy
+//  of this software and associated documentation files (the "Software"), to deal
+//  in the Software without restriction, including without limitation the rights
+//  to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+//  copies of the Software, and to permit persons to whom the Software is
+//  furnished to do so, subject to the following conditions:
+//
+//  The above copyright notice and this permission notice shall be included in
+//  all copies or substantial portions of the Software.
+//
+//  THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+//  IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+//  FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+//  AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+//  LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+//  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+//  THE SOFTWARE.
 
 import Foundation
 
@@ -18,7 +33,7 @@ extension CSPersistanceQueryCommand {
      
      - returns: 创建数据库是否成功
      */
-    func createtable(tableName: String, tableColumnInfo: [String: String]) -> Bool {
+    public func createtable(tableName: String, tableColumnInfo: [String: String]) -> Bool {
         let params = NSMutableArray()
         
         for key in tableColumnInfo.keys {
@@ -37,7 +52,7 @@ extension CSPersistanceQueryCommand {
      
      - returns: 返回执行是否成功
      */
-    func dropTable(tableName: String) -> Bool {
+    public func dropTable(tableName: String) -> Bool {
         let sql = "DROP TABLE if exists '\(tableName)'"
         return self.database(sql,withArgumentsInDictionary: nil)
     }
@@ -51,7 +66,7 @@ extension CSPersistanceQueryCommand {
      
      - returns: 返回执行是否成功
      */
-    func alterTableColumn(tableName: String, withColumName column: String, columnInfo: String) -> Bool{
+    public func alterTableColumn(tableName: String, withColumName column: String, columnInfo: String) -> Bool{
         let sql = "ALTER TABLE \(tableName) ADD COLUMN \(column) \(columnInfo)"
         return self.database(sql,withArgumentsInDictionary: nil)
     }
@@ -64,9 +79,9 @@ extension CSPersistanceQueryCommand {
      
      - returns: 返回执行是否成功
      */
-    func alterDropTableColum(tableName: String, withColumName column: String ) -> Bool {
+    public func alterDropTableColum(tableName: String, withColumName column: String ) -> Bool {
         let sql = "ALTER TABLE \(tableName) drop COLUMN \(column)"
         return self.database(sql,withArgumentsInDictionary: nil)
     }
-
+    
 }

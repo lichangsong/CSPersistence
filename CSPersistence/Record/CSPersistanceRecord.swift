@@ -1,21 +1,36 @@
 //
 //  CSPersistanceRecord.swift
-//  CSArchitecture
 //
-//  Created by 李长松 on 16/4/10.
-//  Copyright © 2016年 Li. All rights reserved.
+//  Copyright (c) 2016 LiChangsong
 //
+//  Permission is hereby granted, free of charge, to any person obtaining a copy
+//  of this software and associated documentation files (the "Software"), to deal
+//  in the Software without restriction, including without limitation the rights
+//  to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+//  copies of the Software, and to permit persons to whom the Software is
+//  furnished to do so, subject to the following conditions:
+//
+//  The above copyright notice and this permission notice shall be included in
+//  all copies or substantial portions of the Software.
+//
+//  THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+//  IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+//  FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+//  AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+//  LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+//  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+//  THE SOFTWARE.
 
 import Foundation
 
-class CSPersistanceRecord:NSObject,CSPersistanceRecordProtocol {
-
-    func dictionaryRepresentationInTable(table: CSPersistanceTableProtocol) -> [String: AnyObject]? {
+public class CSPersistanceRecord:NSObject,CSPersistanceRecordProtocol {
+    
+    public func dictionaryRepresentationInTable(table: CSPersistanceTableProtocol) -> [String: AnyObject]? {
         
         return["":""]
     }
     
-    func dictionaryRepresentationUpdateInTable(table: CSPersistanceTableProtocol) -> [String : AnyObject]? {
+    public func dictionaryRepresentationUpdateInTable(table: CSPersistanceTableProtocol) -> [String : AnyObject]? {
         return["":""]
     }
     /**
@@ -25,7 +40,7 @@ class CSPersistanceRecord:NSObject,CSPersistanceRecordProtocol {
      
      - returns: 表的字段数组
      */
-    func arrayColumnInTable(table: CSPersistanceTableProtocol) -> [String]? {
+    public func arrayColumnInTable(table: CSPersistanceTableProtocol) -> [String]? {
         var columnArray:[String] = []
         for columnKey in table.tableColumnInfo.keys {
             columnArray.append(columnKey)
@@ -37,7 +52,7 @@ class CSPersistanceRecord:NSObject,CSPersistanceRecordProtocol {
      
      - parameter dictionary: 需要转换的数据库字典
      */
-    func objectRepresentationWithDictionary(dictionary: [String : AnyObject]) {
+    public func objectRepresentationWithDictionary(dictionary: [String : AnyObject]) {
         for (key,value) in dictionary {
             self.setValue(value, forKey: key)
         }
