@@ -1,0 +1,777 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0EC94FC082035E504E5FF234 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 768823865C99BE3FAD68691A /* Pods.framework */; };
+		3D11FBC31D13C24C003E1C1C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D11FBC21D13C24C003E1C1C /* AppDelegate.swift */; };
+		3D11FBC51D13C24C003E1C1C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D11FBC41D13C24C003E1C1C /* ViewController.swift */; };
+		3D11FBC81D13C24C003E1C1C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D11FBC61D13C24C003E1C1C /* Main.storyboard */; };
+		3D11FBCA1D13C24C003E1C1C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3D11FBC91D13C24C003E1C1C /* Assets.xcassets */; };
+		3D11FBCD1D13C24C003E1C1C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D11FBCB1D13C24C003E1C1C /* LaunchScreen.storyboard */; };
+		3D11FBD81D13C24C003E1C1C /* CSPersistenceDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D11FBD71D13C24C003E1C1C /* CSPersistenceDemoTests.swift */; };
+		3D11FBE31D13C24D003E1C1C /* CSPersistenceDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D11FBE21D13C24D003E1C1C /* CSPersistenceDemoUITests.swift */; };
+		3D11FC0A1D13C279003E1C1C /* CSPersistanceDataBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D11FBF21D13C279003E1C1C /* CSPersistanceDataBase.swift */; };
+		3D11FC0B1D13C279003E1C1C /* CSPersistanceQueryCommand+DataManipulations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D11FBF61D13C279003E1C1C /* CSPersistanceQueryCommand+DataManipulations.swift */; };
+		3D11FC0C1D13C279003E1C1C /* CSPersistanceQueryCommand+ReadMethods.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D11FBF81D13C279003E1C1C /* CSPersistanceQueryCommand+ReadMethods.swift */; };
+		3D11FC0D1D13C279003E1C1C /* CSPersistanceQueryCommand+SchemaManipulations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D11FBFA1D13C279003E1C1C /* CSPersistanceQueryCommand+SchemaManipulations.swift */; };
+		3D11FC0E1D13C279003E1C1C /* CSPersistanceQueryCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D11FBFB1D13C279003E1C1C /* CSPersistanceQueryCommand.swift */; };
+		3D11FC0F1D13C279003E1C1C /* CSPersistanceRecord.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D11FBFD1D13C279003E1C1C /* CSPersistanceRecord.swift */; };
+		3D11FC101D13C279003E1C1C /* CSPersistanceRecordProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D11FBFE1D13C279003E1C1C /* CSPersistanceRecordProtocol.swift */; };
+		3D11FC111D13C279003E1C1C /* CSPersistanceTable+Delete.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D11FC021D13C279003E1C1C /* CSPersistanceTable+Delete.swift */; };
+		3D11FC121D13C279003E1C1C /* CSPersistanceTable+Find.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D11FC041D13C279003E1C1C /* CSPersistanceTable+Find.swift */; };
+		3D11FC131D13C279003E1C1C /* CSPersistanceTable+Insert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D11FC061D13C279003E1C1C /* CSPersistanceTable+Insert.swift */; };
+		3D11FC141D13C279003E1C1C /* CSPersistanceTable+Update.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D11FC081D13C279003E1C1C /* CSPersistanceTable+Update.swift */; };
+		3D11FC151D13C279003E1C1C /* CSPersistanceTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D11FC091D13C279003E1C1C /* CSPersistanceTable.swift */; };
+		3D11FC1A1D13C30A003E1C1C /* MessageRecode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D11FC161D13C30A003E1C1C /* MessageRecode.swift */; };
+		3D11FC1B1D13C30A003E1C1C /* MessageTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D11FC171D13C30A003E1C1C /* MessageTable.swift */; };
+		3D11FC1C1D13C30A003E1C1C /* UserRecode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D11FC181D13C30A003E1C1C /* UserRecode.swift */; };
+		3D11FC1D1D13C30A003E1C1C /* UserTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D11FC191D13C30A003E1C1C /* UserTable.swift */; };
+		3D11FC201D13C360003E1C1C /* ViewControllerDataCenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D11FC1E1D13C360003E1C1C /* ViewControllerDataCenter.swift */; };
+		3D11FC211D13C360003E1C1C /* ViewControllerHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D11FC1F1D13C360003E1C1C /* ViewControllerHelper.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3D11FBD41D13C24C003E1C1C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3D11FBB71D13C24C003E1C1C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3D11FBBE1D13C24C003E1C1C;
+			remoteInfo = CSPersistenceDemo;
+		};
+		3D11FBDF1D13C24C003E1C1C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3D11FBB71D13C24C003E1C1C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3D11FBBE1D13C24C003E1C1C;
+			remoteInfo = CSPersistenceDemo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1CCAD9A8E91CC63DB6C6B7CB /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		3D11FBBF1D13C24C003E1C1C /* CSPersistenceDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CSPersistenceDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3D11FBC21D13C24C003E1C1C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		3D11FBC41D13C24C003E1C1C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		3D11FBC71D13C24C003E1C1C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3D11FBC91D13C24C003E1C1C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3D11FBCC1D13C24C003E1C1C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		3D11FBCE1D13C24C003E1C1C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3D11FBD31D13C24C003E1C1C /* CSPersistenceDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CSPersistenceDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3D11FBD71D13C24C003E1C1C /* CSPersistenceDemoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CSPersistenceDemoTests.swift; sourceTree = "<group>"; };
+		3D11FBD91D13C24C003E1C1C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3D11FBDE1D13C24C003E1C1C /* CSPersistenceDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CSPersistenceDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3D11FBE21D13C24D003E1C1C /* CSPersistenceDemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CSPersistenceDemoUITests.swift; sourceTree = "<group>"; };
+		3D11FBE41D13C24D003E1C1C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3D11FBF21D13C279003E1C1C /* CSPersistanceDataBase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CSPersistanceDataBase.swift; sourceTree = "<group>"; };
+		3D11FBF61D13C279003E1C1C /* CSPersistanceQueryCommand+DataManipulations.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CSPersistanceQueryCommand+DataManipulations.swift"; sourceTree = "<group>"; };
+		3D11FBF81D13C279003E1C1C /* CSPersistanceQueryCommand+ReadMethods.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CSPersistanceQueryCommand+ReadMethods.swift"; sourceTree = "<group>"; };
+		3D11FBFA1D13C279003E1C1C /* CSPersistanceQueryCommand+SchemaManipulations.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CSPersistanceQueryCommand+SchemaManipulations.swift"; sourceTree = "<group>"; };
+		3D11FBFB1D13C279003E1C1C /* CSPersistanceQueryCommand.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CSPersistanceQueryCommand.swift; sourceTree = "<group>"; };
+		3D11FBFD1D13C279003E1C1C /* CSPersistanceRecord.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CSPersistanceRecord.swift; sourceTree = "<group>"; };
+		3D11FBFE1D13C279003E1C1C /* CSPersistanceRecordProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CSPersistanceRecordProtocol.swift; sourceTree = "<group>"; };
+		3D11FC021D13C279003E1C1C /* CSPersistanceTable+Delete.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CSPersistanceTable+Delete.swift"; sourceTree = "<group>"; };
+		3D11FC041D13C279003E1C1C /* CSPersistanceTable+Find.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CSPersistanceTable+Find.swift"; sourceTree = "<group>"; };
+		3D11FC061D13C279003E1C1C /* CSPersistanceTable+Insert.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CSPersistanceTable+Insert.swift"; sourceTree = "<group>"; };
+		3D11FC081D13C279003E1C1C /* CSPersistanceTable+Update.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CSPersistanceTable+Update.swift"; sourceTree = "<group>"; };
+		3D11FC091D13C279003E1C1C /* CSPersistanceTable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CSPersistanceTable.swift; sourceTree = "<group>"; };
+		3D11FC161D13C30A003E1C1C /* MessageRecode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageRecode.swift; sourceTree = "<group>"; };
+		3D11FC171D13C30A003E1C1C /* MessageTable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageTable.swift; sourceTree = "<group>"; };
+		3D11FC181D13C30A003E1C1C /* UserRecode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserRecode.swift; sourceTree = "<group>"; };
+		3D11FC191D13C30A003E1C1C /* UserTable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserTable.swift; sourceTree = "<group>"; };
+		3D11FC1E1D13C360003E1C1C /* ViewControllerDataCenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerDataCenter.swift; sourceTree = "<group>"; };
+		3D11FC1F1D13C360003E1C1C /* ViewControllerHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerHelper.swift; sourceTree = "<group>"; };
+		3D52DA191D13C8BA00128140 /* CSPersistenceDemo-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CSPersistenceDemo-Bridging-Header.h"; sourceTree = "<group>"; };
+		768823865C99BE3FAD68691A /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		842C3B8F80163DB03D3FDD20 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3D11FBBC1D13C24C003E1C1C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0EC94FC082035E504E5FF234 /* Pods.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3D11FBD01D13C24C003E1C1C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3D11FBDB1D13C24C003E1C1C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3D11FBB61D13C24C003E1C1C = {
+			isa = PBXGroup;
+			children = (
+				3D11FBC11D13C24C003E1C1C /* CSPersistenceDemo */,
+				3D11FBD61D13C24C003E1C1C /* CSPersistenceDemoTests */,
+				3D11FBE11D13C24C003E1C1C /* CSPersistenceDemoUITests */,
+				3D11FBC01D13C24C003E1C1C /* Products */,
+				9D8982464ADBD0846B92ABA5 /* Pods */,
+				3F757DF73D60D2F7A4C1D4F9 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		3D11FBC01D13C24C003E1C1C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3D11FBBF1D13C24C003E1C1C /* CSPersistenceDemo.app */,
+				3D11FBD31D13C24C003E1C1C /* CSPersistenceDemoTests.xctest */,
+				3D11FBDE1D13C24C003E1C1C /* CSPersistenceDemoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3D11FBC11D13C24C003E1C1C /* CSPersistenceDemo */ = {
+			isa = PBXGroup;
+			children = (
+				3D11FBF01D13C279003E1C1C /* CSPersistence */,
+				3D11FBC21D13C24C003E1C1C /* AppDelegate.swift */,
+				3D11FBC41D13C24C003E1C1C /* ViewController.swift */,
+				3D11FC1E1D13C360003E1C1C /* ViewControllerDataCenter.swift */,
+				3D11FC1F1D13C360003E1C1C /* ViewControllerHelper.swift */,
+				3D11FC161D13C30A003E1C1C /* MessageRecode.swift */,
+				3D11FC171D13C30A003E1C1C /* MessageTable.swift */,
+				3D11FC181D13C30A003E1C1C /* UserRecode.swift */,
+				3D11FC191D13C30A003E1C1C /* UserTable.swift */,
+				3D11FBC61D13C24C003E1C1C /* Main.storyboard */,
+				3D11FBC91D13C24C003E1C1C /* Assets.xcassets */,
+				3D11FBCB1D13C24C003E1C1C /* LaunchScreen.storyboard */,
+				3D11FBCE1D13C24C003E1C1C /* Info.plist */,
+				3D52DA191D13C8BA00128140 /* CSPersistenceDemo-Bridging-Header.h */,
+			);
+			path = CSPersistenceDemo;
+			sourceTree = "<group>";
+		};
+		3D11FBD61D13C24C003E1C1C /* CSPersistenceDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				3D11FBD71D13C24C003E1C1C /* CSPersistenceDemoTests.swift */,
+				3D11FBD91D13C24C003E1C1C /* Info.plist */,
+			);
+			path = CSPersistenceDemoTests;
+			sourceTree = "<group>";
+		};
+		3D11FBE11D13C24C003E1C1C /* CSPersistenceDemoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				3D11FBE21D13C24D003E1C1C /* CSPersistenceDemoUITests.swift */,
+				3D11FBE41D13C24D003E1C1C /* Info.plist */,
+			);
+			path = CSPersistenceDemoUITests;
+			sourceTree = "<group>";
+		};
+		3D11FBF01D13C279003E1C1C /* CSPersistence */ = {
+			isa = PBXGroup;
+			children = (
+				3D11FBF11D13C279003E1C1C /* Database */,
+				3D11FBF31D13C279003E1C1C /* QueryCommand */,
+				3D11FBFC1D13C279003E1C1C /* Record */,
+				3D11FBFF1D13C279003E1C1C /* Table */,
+			);
+			name = CSPersistence;
+			path = ../../CSPersistence;
+			sourceTree = "<group>";
+		};
+		3D11FBF11D13C279003E1C1C /* Database */ = {
+			isa = PBXGroup;
+			children = (
+				3D11FBF21D13C279003E1C1C /* CSPersistanceDataBase.swift */,
+			);
+			path = Database;
+			sourceTree = "<group>";
+		};
+		3D11FBF31D13C279003E1C1C /* QueryCommand */ = {
+			isa = PBXGroup;
+			children = (
+				3D11FBF41D13C279003E1C1C /* Categories */,
+				3D11FBFB1D13C279003E1C1C /* CSPersistanceQueryCommand.swift */,
+			);
+			path = QueryCommand;
+			sourceTree = "<group>";
+		};
+		3D11FBF41D13C279003E1C1C /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				3D11FBF51D13C279003E1C1C /* DataManipulations */,
+				3D11FBF71D13C279003E1C1C /* ReadingMethods */,
+				3D11FBF91D13C279003E1C1C /* SchemaManipulations */,
+			);
+			path = Categories;
+			sourceTree = "<group>";
+		};
+		3D11FBF51D13C279003E1C1C /* DataManipulations */ = {
+			isa = PBXGroup;
+			children = (
+				3D11FBF61D13C279003E1C1C /* CSPersistanceQueryCommand+DataManipulations.swift */,
+			);
+			path = DataManipulations;
+			sourceTree = "<group>";
+		};
+		3D11FBF71D13C279003E1C1C /* ReadingMethods */ = {
+			isa = PBXGroup;
+			children = (
+				3D11FBF81D13C279003E1C1C /* CSPersistanceQueryCommand+ReadMethods.swift */,
+			);
+			path = ReadingMethods;
+			sourceTree = "<group>";
+		};
+		3D11FBF91D13C279003E1C1C /* SchemaManipulations */ = {
+			isa = PBXGroup;
+			children = (
+				3D11FBFA1D13C279003E1C1C /* CSPersistanceQueryCommand+SchemaManipulations.swift */,
+			);
+			path = SchemaManipulations;
+			sourceTree = "<group>";
+		};
+		3D11FBFC1D13C279003E1C1C /* Record */ = {
+			isa = PBXGroup;
+			children = (
+				3D11FBFD1D13C279003E1C1C /* CSPersistanceRecord.swift */,
+				3D11FBFE1D13C279003E1C1C /* CSPersistanceRecordProtocol.swift */,
+			);
+			path = Record;
+			sourceTree = "<group>";
+		};
+		3D11FBFF1D13C279003E1C1C /* Table */ = {
+			isa = PBXGroup;
+			children = (
+				3D11FC001D13C279003E1C1C /* Categories */,
+				3D11FC091D13C279003E1C1C /* CSPersistanceTable.swift */,
+			);
+			path = Table;
+			sourceTree = "<group>";
+		};
+		3D11FC001D13C279003E1C1C /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				3D11FC011D13C279003E1C1C /* Delete */,
+				3D11FC031D13C279003E1C1C /* Find */,
+				3D11FC051D13C279003E1C1C /* Insert */,
+				3D11FC071D13C279003E1C1C /* Update */,
+			);
+			path = Categories;
+			sourceTree = "<group>";
+		};
+		3D11FC011D13C279003E1C1C /* Delete */ = {
+			isa = PBXGroup;
+			children = (
+				3D11FC021D13C279003E1C1C /* CSPersistanceTable+Delete.swift */,
+			);
+			path = Delete;
+			sourceTree = "<group>";
+		};
+		3D11FC031D13C279003E1C1C /* Find */ = {
+			isa = PBXGroup;
+			children = (
+				3D11FC041D13C279003E1C1C /* CSPersistanceTable+Find.swift */,
+			);
+			path = Find;
+			sourceTree = "<group>";
+		};
+		3D11FC051D13C279003E1C1C /* Insert */ = {
+			isa = PBXGroup;
+			children = (
+				3D11FC061D13C279003E1C1C /* CSPersistanceTable+Insert.swift */,
+			);
+			path = Insert;
+			sourceTree = "<group>";
+		};
+		3D11FC071D13C279003E1C1C /* Update */ = {
+			isa = PBXGroup;
+			children = (
+				3D11FC081D13C279003E1C1C /* CSPersistanceTable+Update.swift */,
+			);
+			path = Update;
+			sourceTree = "<group>";
+		};
+		3F757DF73D60D2F7A4C1D4F9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				768823865C99BE3FAD68691A /* Pods.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9D8982464ADBD0846B92ABA5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1CCAD9A8E91CC63DB6C6B7CB /* Pods.debug.xcconfig */,
+				842C3B8F80163DB03D3FDD20 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3D11FBBE1D13C24C003E1C1C /* CSPersistenceDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3D11FBE71D13C24D003E1C1C /* Build configuration list for PBXNativeTarget "CSPersistenceDemo" */;
+			buildPhases = (
+				769613983A05ED89CE130979 /* Check Pods Manifest.lock */,
+				3D11FBBB1D13C24C003E1C1C /* Sources */,
+				3D11FBBC1D13C24C003E1C1C /* Frameworks */,
+				3D11FBBD1D13C24C003E1C1C /* Resources */,
+				D905300AEA73DEAD15B4B4FF /* Embed Pods Frameworks */,
+				2FCD64ECD971FFE9852EA8E7 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CSPersistenceDemo;
+			productName = CSPersistenceDemo;
+			productReference = 3D11FBBF1D13C24C003E1C1C /* CSPersistenceDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		3D11FBD21D13C24C003E1C1C /* CSPersistenceDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3D11FBEA1D13C24D003E1C1C /* Build configuration list for PBXNativeTarget "CSPersistenceDemoTests" */;
+			buildPhases = (
+				3D11FBCF1D13C24C003E1C1C /* Sources */,
+				3D11FBD01D13C24C003E1C1C /* Frameworks */,
+				3D11FBD11D13C24C003E1C1C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3D11FBD51D13C24C003E1C1C /* PBXTargetDependency */,
+			);
+			name = CSPersistenceDemoTests;
+			productName = CSPersistenceDemoTests;
+			productReference = 3D11FBD31D13C24C003E1C1C /* CSPersistenceDemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		3D11FBDD1D13C24C003E1C1C /* CSPersistenceDemoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3D11FBED1D13C24D003E1C1C /* Build configuration list for PBXNativeTarget "CSPersistenceDemoUITests" */;
+			buildPhases = (
+				3D11FBDA1D13C24C003E1C1C /* Sources */,
+				3D11FBDB1D13C24C003E1C1C /* Frameworks */,
+				3D11FBDC1D13C24C003E1C1C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3D11FBE01D13C24C003E1C1C /* PBXTargetDependency */,
+			);
+			name = CSPersistenceDemoUITests;
+			productName = CSPersistenceDemoUITests;
+			productReference = 3D11FBDE1D13C24C003E1C1C /* CSPersistenceDemoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3D11FBB71D13C24C003E1C1C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = Li;
+				TargetAttributes = {
+					3D11FBBE1D13C24C003E1C1C = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+					3D11FBD21D13C24C003E1C1C = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = 3D11FBBE1D13C24C003E1C1C;
+					};
+					3D11FBDD1D13C24C003E1C1C = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = 3D11FBBE1D13C24C003E1C1C;
+					};
+				};
+			};
+			buildConfigurationList = 3D11FBBA1D13C24C003E1C1C /* Build configuration list for PBXProject "CSPersistenceDemo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3D11FBB61D13C24C003E1C1C;
+			productRefGroup = 3D11FBC01D13C24C003E1C1C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3D11FBBE1D13C24C003E1C1C /* CSPersistenceDemo */,
+				3D11FBD21D13C24C003E1C1C /* CSPersistenceDemoTests */,
+				3D11FBDD1D13C24C003E1C1C /* CSPersistenceDemoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3D11FBBD1D13C24C003E1C1C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3D11FBCD1D13C24C003E1C1C /* LaunchScreen.storyboard in Resources */,
+				3D11FBCA1D13C24C003E1C1C /* Assets.xcassets in Resources */,
+				3D11FBC81D13C24C003E1C1C /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3D11FBD11D13C24C003E1C1C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3D11FBDC1D13C24C003E1C1C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2FCD64ECD971FFE9852EA8E7 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		769613983A05ED89CE130979 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		D905300AEA73DEAD15B4B4FF /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3D11FBBB1D13C24C003E1C1C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3D11FC211D13C360003E1C1C /* ViewControllerHelper.swift in Sources */,
+				3D11FC0A1D13C279003E1C1C /* CSPersistanceDataBase.swift in Sources */,
+				3D11FC141D13C279003E1C1C /* CSPersistanceTable+Update.swift in Sources */,
+				3D11FC121D13C279003E1C1C /* CSPersistanceTable+Find.swift in Sources */,
+				3D11FC0B1D13C279003E1C1C /* CSPersistanceQueryCommand+DataManipulations.swift in Sources */,
+				3D11FC101D13C279003E1C1C /* CSPersistanceRecordProtocol.swift in Sources */,
+				3D11FC111D13C279003E1C1C /* CSPersistanceTable+Delete.swift in Sources */,
+				3D11FC0F1D13C279003E1C1C /* CSPersistanceRecord.swift in Sources */,
+				3D11FC1D1D13C30A003E1C1C /* UserTable.swift in Sources */,
+				3D11FC0D1D13C279003E1C1C /* CSPersistanceQueryCommand+SchemaManipulations.swift in Sources */,
+				3D11FBC51D13C24C003E1C1C /* ViewController.swift in Sources */,
+				3D11FC201D13C360003E1C1C /* ViewControllerDataCenter.swift in Sources */,
+				3D11FC1A1D13C30A003E1C1C /* MessageRecode.swift in Sources */,
+				3D11FC1C1D13C30A003E1C1C /* UserRecode.swift in Sources */,
+				3D11FC1B1D13C30A003E1C1C /* MessageTable.swift in Sources */,
+				3D11FC0E1D13C279003E1C1C /* CSPersistanceQueryCommand.swift in Sources */,
+				3D11FC131D13C279003E1C1C /* CSPersistanceTable+Insert.swift in Sources */,
+				3D11FC0C1D13C279003E1C1C /* CSPersistanceQueryCommand+ReadMethods.swift in Sources */,
+				3D11FC151D13C279003E1C1C /* CSPersistanceTable.swift in Sources */,
+				3D11FBC31D13C24C003E1C1C /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3D11FBCF1D13C24C003E1C1C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3D11FBD81D13C24C003E1C1C /* CSPersistenceDemoTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3D11FBDA1D13C24C003E1C1C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3D11FBE31D13C24D003E1C1C /* CSPersistenceDemoUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3D11FBD51D13C24C003E1C1C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3D11FBBE1D13C24C003E1C1C /* CSPersistenceDemo */;
+			targetProxy = 3D11FBD41D13C24C003E1C1C /* PBXContainerItemProxy */;
+		};
+		3D11FBE01D13C24C003E1C1C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3D11FBBE1D13C24C003E1C1C /* CSPersistenceDemo */;
+			targetProxy = 3D11FBDF1D13C24C003E1C1C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		3D11FBC61D13C24C003E1C1C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3D11FBC71D13C24C003E1C1C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		3D11FBCB1D13C24C003E1C1C /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3D11FBCC1D13C24C003E1C1C /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3D11FBE51D13C24D003E1C1C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		3D11FBE61D13C24D003E1C1C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3D11FBE81D13C24D003E1C1C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1CCAD9A8E91CC63DB6C6B7CB /* Pods.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				INFOPLIST_FILE = CSPersistenceDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = me.lichangsong.CSPersistenceDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "CSPersistenceDemo/CSPersistenceDemo-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		3D11FBE91D13C24D003E1C1C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 842C3B8F80163DB03D3FDD20 /* Pods.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				INFOPLIST_FILE = CSPersistenceDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = me.lichangsong.CSPersistenceDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "CSPersistenceDemo/CSPersistenceDemo-Bridging-Header.h";
+			};
+			name = Release;
+		};
+		3D11FBEB1D13C24D003E1C1C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = CSPersistenceDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = me.lichangsong.CSPersistenceDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CSPersistenceDemo.app/CSPersistenceDemo";
+			};
+			name = Debug;
+		};
+		3D11FBEC1D13C24D003E1C1C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = CSPersistenceDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = me.lichangsong.CSPersistenceDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CSPersistenceDemo.app/CSPersistenceDemo";
+			};
+			name = Release;
+		};
+		3D11FBEE1D13C24D003E1C1C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = CSPersistenceDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = me.lichangsong.CSPersistenceDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = CSPersistenceDemo;
+			};
+			name = Debug;
+		};
+		3D11FBEF1D13C24D003E1C1C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = CSPersistenceDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = me.lichangsong.CSPersistenceDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = CSPersistenceDemo;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3D11FBBA1D13C24C003E1C1C /* Build configuration list for PBXProject "CSPersistenceDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3D11FBE51D13C24D003E1C1C /* Debug */,
+				3D11FBE61D13C24D003E1C1C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3D11FBE71D13C24D003E1C1C /* Build configuration list for PBXNativeTarget "CSPersistenceDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3D11FBE81D13C24D003E1C1C /* Debug */,
+				3D11FBE91D13C24D003E1C1C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3D11FBEA1D13C24D003E1C1C /* Build configuration list for PBXNativeTarget "CSPersistenceDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3D11FBEB1D13C24D003E1C1C /* Debug */,
+				3D11FBEC1D13C24D003E1C1C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3D11FBED1D13C24D003E1C1C /* Build configuration list for PBXNativeTarget "CSPersistenceDemoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3D11FBEE1D13C24D003E1C1C /* Debug */,
+				3D11FBEF1D13C24D003E1C1C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3D11FBB71D13C24C003E1C1C /* Project object */;
+}
