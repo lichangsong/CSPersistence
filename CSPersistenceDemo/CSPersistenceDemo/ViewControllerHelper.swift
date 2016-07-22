@@ -15,6 +15,6 @@ class ViewControllerHelper: NSObject {
     override init() {
         super.init()
         viewDataCenter = ViewControllerDataCenter()
-        viewDataCenter?.testPersistance()
+        viewDataCenter?.fetchItemListWithFilter()
     }
 }

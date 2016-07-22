@@ -69,25 +69,25 @@ public class CSPersistanceTable : NSObject {
         return queryCommand.database(sqlString, withArgumentsInArray: nil)
     }
     
-    /**
-     将从数据库中查询的数据转换成CSPersistanceRecord数组
-     
-     - parameter record:    Table.recordClass
-     - parameter baseArray: 查询得到的数据库字典
-     
-     - returns: record 数组
-     */
-    public func transformSQLItemsToClass(record: CSPersistanceRecord, dataBaseArray: [[String : AnyObject]]?) -> [CSPersistanceRecord] {
-        var recordArray:[CSPersistanceRecord] = []
-        if dataBaseArray!.count > 0 {
-            for item in dataBaseArray! {
-                //                if record.respondsToSelector(Selector("objectRepresentationWithDictionary:")) {
-                if record.respondsToSelector(#selector(CSPersistanceRecord.objectRepresentationWithDictionary(_:))) {
-                    record.objectRepresentationWithDictionary(item)
-                    recordArray.append(record)
-                }
-            }
-        }
-        return recordArray
-    }
+//    /**
+//     将从数据库中查询的数据转换成CSPersistanceRecord数组
+//
+//     - parameter record:    Table.recordClass
+//     - parameter baseArray: 查询得到的数据库字典
+//
+//     - returns: record 数组
+//     */
+//    public func transformSQLItemsToClass(record: CSPersistanceRecord, dataBaseArray: [[String : AnyObject]]?) -> [CSPersistanceRecord] {
+//        var recordArray:[CSPersistanceRecord] = []
+//        if dataBaseArray!.count > 0 {
+//            for item in dataBaseArray! {
+//                if record.respondsToSelector(#selector(CSPersistanceRecord.objectRepresentationWithDictionary(_:))) {
+//                    record.objectRepresentationWithDictionary(item)
+//                    recordArray.append(record)
+//                }
+//            }
+//        }
+//        return recordArray
+//    }
 }
+

@@ -45,5 +45,16 @@ class UserRecode: CSPersistanceRecord {
         }
         return nil
     }
+    
+    override func reformData(manager: CSPersistanceTable, data: [[String : AnyObject]]) -> AnyObject {
+        var dataArr: [UserRecode] = []
+        for item in data {
+            let card = UserRecode()
+            card.user_id = item["user_id"] as? NSNumber
+            card.user_name = item["user_name"] as? String
+            dataArr.append(card)
+        }
+        return dataArr
+    }
 }
 

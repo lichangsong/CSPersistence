@@ -12,27 +12,26 @@ class ViewControllerDataCenter : NSObject {
     var userTable: UserTable?
     var messageTable: MessageTable?
     
-    func fetchItemListWithFilter(filter: [String : String]?) {
+    func fetchItemListWithFilter() {
         userTable = UserTable()
         let condition = DatabaseCommandCondition()
         condition.whereConditions = "user_id >= 0"
         condition.orderBy = "user_name"
-        let result = userTable!.fetchWithSQL(nil, condition: condition)
-        let record = result![0] as! UserRecode
-        
-        print(record.user_name!)
-        
+        let result = userTable!.fetchWithSQL(nil, condition: condition) as! [UserRecode]
+        for item in result {
+            print(item.user_name)
+        }
         
         messageTable = MessageTable()
         let conditionMessage = DatabaseCommandCondition()
         conditionMessage.whereConditions = "message_id >= 0"
-        let resultMessage = messageTable!.fetchWithSQL(nil, condition: conditionMessage)
-        let recordMessage = resultMessage![0] as! MessageRecode
+//        let resultMessage = messageTable!.fetchWithSQL(nil, condition: conditionMessage)
+//        let recordMessage = resultMessage![0] as! MessageRecode
     }
     func testPersistance() {
         // 插入
         let table = UserTable()
-        let newUser = UserRecode(name: "小花", uid: 22)
+        let newUser = UserRecode(name: "小花1", uid: 24)
         newUser.user_married = true
         newUser.user_sex = "男"
         
@@ -48,7 +47,6 @@ class ViewControllerDataCenter : NSObject {
 //        condition.whereConditions = "user_id >= 0"
 //        condition.orderBy = "user_name"
 //        let result = tableFetch.fetchWithSQL(nil, condition: condition)
-//        let record = result![0] as! UserRecode
 //        
 //        // 删除
 //        let conditionDelete = DatabaseCommandCondition()

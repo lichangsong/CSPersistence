@@ -42,10 +42,12 @@ public protocol CSPersistanceRecordProtocol : NSObjectProtocol{
     
     func arrayColumnInTable(table: CSPersistanceTableProtocol) -> [String]?
     
-    /**
-     将返回字典处理成Recorde
-     
-     - parameter dictionary: 数据库中存储数据
-     */
-    func objectRepresentationWithDictionary(dictionary : [String : AnyObject])
+    func reformData(manager: CSPersistanceTable, data: [[String : AnyObject]]) -> AnyObject
+    
+//    /**
+//     将返回字典处理成Recorde
+//
+//     - parameter dictionary: 数据库中存储数据
+//     */
+//    func objectRepresentationWithDictionary(dictionary : [String : AnyObject])
 }

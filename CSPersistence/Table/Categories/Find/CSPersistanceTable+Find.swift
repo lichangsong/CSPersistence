@@ -24,12 +24,12 @@
 import Foundation
 extension CSPersistanceTable {
     // 查询
-    public func fetchWithSQL(select: String?,condition: DatabaseCommandCondition) -> [CSPersistanceRecord]? {
+    public func fetchWithSQL(select: String?,condition: DatabaseCommandCondition) -> AnyObject {
         let queryCommand = CSPersistanceQueryCommand(name: child!.databaseName!)
         let sql = queryCommand.queryCommandWithTable(self.child!.tableName, select: select, condition: condition)
-        let queryArray = queryCommand.database(sql, withArgumentsInArray: nil)
-        
-        return self.transformSQLItemsToClass(self.child!.recordClass, dataBaseArray: queryArray as? [[String:AnyObject]])
+        let queryArray = queryCommand.database(sql, withArgumentsInArray: nil) as! [[String:AnyObject]]
+        let resultData = self.child!.recordClass.reformData(self, data: queryArray)
+        return resultData
         
     }
 }
